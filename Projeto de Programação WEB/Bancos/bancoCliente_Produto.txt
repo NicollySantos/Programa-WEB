@@ -1,0 +1,61 @@
+create table tbCategoria(
+ idCategoria int primary key auto_increment
+,categoria varchar(50)
+);
+
+create table tbProduto(
+ idProduto int primary key auto_increment
+,imgPro varchar(150)
+,titimgPro varchar(150)
+,titPro varchar(150)
+,idCategoria int
+,descrPro varchar(150)
+,valorPro float
+,foreign key(idCategoria) references tbCategoria(idCategoria) 
+);
+
+insert into tbCategoria values(
+ null
+,'Tecnologia'
+);
+
+insert into tbProduto values(
+null
+,'caminho/nomeDaImg.extensao'
+,'titulo da imagem'
+,'titulo do produto'
+,1
+,'descricao do produto'
+,'5000'
+);
+
+insert into tbProduto values(
+null
+,'caminho/nomeDaImg2.extensao'
+,'titulo da imagem2'
+,'titulo do produto2'
+,1
+,'descricao do produto2'
+,'1000'
+);
+
+insert into tbProduto values(
+null
+,'img/produto-exemplo.jpg'
+,'note'
+,'Notebook'
+,1
+,'Notebook legal'
+,'4000'
+);
+
+insert into tbProduto values(
+null
+,'img/produto-exemplo.jpg'
+,'monito'
+,'Monitor'
+,1
+,'Monitor legal'
+,'3500'
+);
+

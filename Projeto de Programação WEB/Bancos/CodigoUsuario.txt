@@ -1,0 +1,9 @@
+Código do banco do Usuário 
+
+------------------------------
+
+NOME do banco de dados:
+banco
+
+
+CREATE TABLE `banco`.`tbuser` ( `idUsuario` INT(40) NOT NULL AUTO_INCREMENT , `usuario` VARCHAR(40) NOT NULL , `senha` VARCHAR(40) NOT NULL , PRIMARY KEY (`idUsuario`));

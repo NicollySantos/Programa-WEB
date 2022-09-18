@@ -1,0 +1,102 @@
+Nome do Banco: escola_func
+
+create table tbprofessor(
+id int primary key auto_increment,
+nome varchar(30) not null,
+cpf bigint(11) not null,
+telefone varchar(18) not null,
+endereco varchar(150) not null,
+);
+
+create table tbauxiliarlimpeza(
+id int primary key auto_increment,
+nome varchar(30) not null,
+cpf bigint(11) not null,
+telefone varchar(18) not null,
+endereco varchar(150) not null,
+);
+
+create table tbcoordenador(
+id int primary key auto_increment,
+nome varchar(30) not null,
+cpf bigint(11) not null,
+telefone varchar(18) not null,
+endereco varchar(150) not null,
+);
+
+create table tbdiretor(
+id int primary key auto_increment,
+nome varchar(30) not null,
+cpf bigint(11) not null,
+telefone varchar(18) not null,
+endereco varchar(150) not null,
+);
+
+create table tbinspetor(
+id int primary key auto_increment,
+nome varchar(30) not null,
+cpf bigint(11) not null,
+telefone varchar(18) not null,
+endereco varchar(150) not null,
+);
+
+create table tbmerendeiro(
+id int primary key auto_increment,
+nome varchar(30) not null,
+cpf bigint(11) not null,
+telefone varchar(18) not null,
+endereco varchar(150) not null,
+);
+
+create table tbsecretario(
+id int primary key auto_increment,
+nome varchar(30) not null,
+cpf bigint(11) not null,
+telefone varchar(18) not null,
+endereco varchar(150) not null,
+);
+
+create table tbvigia(
+id int primary key auto_increment,
+nome varchar(30) not null,
+cpf bigint(11) not null,
+telefone varchar(18) not null,
+endereco varchar(150) not null,
+);
+
+
+ insert into tbprofessor values
+(null,'Letícia Anchieta', 11165495645, '(55) 11 6523-9548', 'Rua das Flores, 501, São Paulo, 03211-000'),
+(null,'José da Silva Xavier', 13568497521, '(55) 11 3025-1025', 'Rua Visconde, 35, São Paulo, 03259-000'),
+(null,'Antônio Ramos Conte', 12369856473, '(55) 11 9856-4587', 'Rua das Cerejeiras, 452, São Paulo, 05236-000'),
+(null,'Maria Santos', 34569852147, '(55) 11 3021-7541', 'Rua Benfica, 85, São Paulo, 02458-000'),
+(null,'Ivan Diniz', 35477689215, '(55) 11 6785-9451', 'Rua Augusta, 73, São Paulo, 04668-000');
+
+insert into tbdiretor values
+(null,'Fernanda Alcântara', 13658745896, '(55) 11 0214-4523', 'Rua das Bromélias, 307, São Paulo, 04586-000');
+
+insert into tbauxiliarlimpeza values
+(null,'Silvia Almeida', 13562478956, '(55) 11 5231-1523', 'Rua José Bonifácio, 12, São Paulo, 03652-000'),
+(null,'Ingrid Vilar', 14523698547, '(55) 11 4152-2015', 'Rua São Bento, 305, São Paulo, 04521-000'),
+(null,'Ricardo Hernandes', 15632478956, '(55) 11 7523-4587', 'Rua Campó de Bagateli, 62, São Paulo, 07854-000'),
+(null,'Débora Franco', 16532478901, '(55) 11 3021-3015', 'Rua dos Tigres, 71, São Paulo, 02653-000');
+
+insert into tbcoordenador values
+(null,'Flávia Alcântara', 15478695261, '(55) 11 5236-9548', 'Rua Clementina, 74, São Paulo, 03652-000'),
+(null,'Walter Assunção', 12365478923, '(55) 11 4520-1025', 'Rua Piraçununga, 20, São Paulo, 04586-000'),
+(null,'Carolina Guilhermina', 16589423637, '(55) 11 9856-8562', 'Rua José Alberto, 71, São Paulo, 05632-000');
+
+insert into tbinspetor values
+(null,'Adalberto da Costa', 15369842563, '(55) 11 6523-9548', 'Rua das Nações, 25, São Paulo, 03658-000'),
+(null,'Reginaldo Reges', 15478695235, '(55) 11 3025-7452', 'Rua das Esmeraldas, 406, São Paulo, 04523-000');
+
+insert into tbmerendeiro values
+(null,'Vitória Lima', 1547869235, '(55) 11 0123-4562', 'Rua Marechal Deodoro, 120, São Paulo, 05423-000'),
+(null,'José Antônio Lemos', 13568497521, '(55) 11 0452-0325', 'Rua Emília Marengo, 35, São Paulo, 04756-000');
+
+insert into tbsecretario values
+(null,'Joana Pereira', 1135624794, '(55) 11 3562-7532', 'Rua Miranda, 103, São Paulo, 04523-000');
+
+insert into tbvigia values
+(null,'Luciana Rodriguez', 12365489751, '(55) 11 0321-4563', 'Rua Direita, 10, São Paulo, 06523-000'),
+(null,'Carlos Xavier', 12365894756, '(55) 11 0145-1025', 'Rua da Mooca, 75, São Paulo, 04582-000');

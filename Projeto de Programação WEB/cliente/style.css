@@ -1,0 +1,65 @@
+body{
+	height: 100%;
+    width: 100%;
+    margin: 0;
+	font-family: 'Poiret One', cursive;
+}
+#sec-produto{
+    background-color: rgb(111, 196, 149);
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    width: 200px;
+}
+#div-produtos{
+    margin: 2% 1%;
+    border-collapse: collapse;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(22, 22, 22, 0.822); 
+    font-weight: bolder;
+    background-color: white;
+    border-radius: 5%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#produto{
+    font-size: 25px;
+    font-weight: 1000;
+}
+#valor{
+    color: #888;
+}
+.linha {
+    background-color: rgb(111, 196, 149);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    height: 7%; /* Full height */
+    width: 100%;
+    color: #f2f2f2;
+
+}
+/* Links inside the navbar */
+#navbar a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Change background on mouse-over */
+#navbar a:hover {
+    background: rgb(40, 117, 70);
+    color: rgb(255, 255, 255);
+}
+#destaque{
+    margin-top: 5%;
+}
